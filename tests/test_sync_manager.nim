@@ -27,6 +27,12 @@ template shortLog(peer: SomeTPeer): string =
 proc updateScore(peer: SomeTPeer, score: int) =
   discard
 
+proc updateStats(peer: SomeTPeer, index: SyncResponseKind, score: uint64) =
+  discard
+
+proc getStats(peer: SomeTPeer, index: SyncResponseKind): uint64 =
+  0
+
 func getStaticSlotCb(slot: Slot): GetSlotCallback =
   proc getSlot(): Slot =
     slot
