@@ -35,7 +35,7 @@ const
   FORKCHOICEUPDATED_TIMEOUT* = 8.seconds
 
   # https://github.com/ethereum/execution-apis/blob/v1.0.0-beta.1/src/engine/specification.md#request
-  NEWPAYLOAD_TIMEOUT* = 8.seconds
+  NEWPAYLOAD_TIMEOUT* = 30.seconds
 
 type
   # https://github.com/ethereum/consensus-specs/blob/v1.2.0-rc.1/specs/bellatrix/beacon-chain.md#custom-types
